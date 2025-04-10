@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 export const Home = () => {
   return (
+    <>
     <div className="position-relative overflow-hidden">
       <video
         autoPlay
@@ -22,5 +23,6 @@ export const Home = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
