@@ -14,8 +14,7 @@ import { UserDetailsForm } from '../pages/UserDetails';
       {isAuthenticated? ( 
         <>
       <Route path="/" element={<Home />} />
-
-        <Route path="/UserDetails" element={<UserDetailsForm  />} />
+      <Route path="/UserDetails" element={<UserDetailsForm  />} />
       <Route path="/jobs" element={<JobList />} />
       <Route path="/*" element={<Navigate to={"/"}/>}/>
 

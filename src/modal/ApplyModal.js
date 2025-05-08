@@ -15,8 +15,7 @@ export const ApplyModal = ({ show, onClose, job, onSuccess }) => {
     formData.append("jobId", job?.slug || job?.id || job?.url);
 
     try {
-      const res = await axios("http://localhost:8000//apply-job", {
-        method: "POST",
+      const res = await axios.post("http://localhost:8000/apply-job", {
         headers: {
           Authorization: `Bearer ${Cookies.get("token")}`,
         },

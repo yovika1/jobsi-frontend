@@ -107,24 +107,14 @@ export const JobList = () => {
                     >
                       View Job
                     </a>
-                    <button
-                      className="btn btn-success ms-2 px-4 rounded-pill fw-semibold"
-                      onClick={() => handleApplyClick(job)}
-                    >
-                      Apply Now
-                    </button>
+                  
                   </div>
                 </div>
               </div>
             ))}
         </div>
 
-        <ApplyModal
-          show={showModal}
-          onClose={() => setShowModal(false)}
-          job={selectedJob}
-          onSuccess={() => console.log('Application success')}
-        />
+   
       </div>
     </div>
   );

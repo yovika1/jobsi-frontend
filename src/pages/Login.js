@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Cookies from "js-cookie";
 
+
 export const Login = () => {
   const [email, setemail] = useState("");
   const [otp, setOtp] = useState(["", "", "", ""]);
@@ -22,6 +23,7 @@ export const Login = () => {
   const [countdown, setCountdown] = useState(30);
   const [resendLoading, setResendLoading] = useState(false);
   const navigate = useNavigate();
+
   const [verifying, setVerifying] = useState(false);
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
